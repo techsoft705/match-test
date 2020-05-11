@@ -512,13 +512,13 @@ server.listen(3000, () => console.log("server is running"));
 
 ## How To Test
 
-	**natural-utility** uses `supertest` to mock http requests, thus testing no longer relies on the http server.
+**natural-utility** uses `supertest` to mock http requests, thus testing no longer relies on the http server.
 
-	+	```bash
-		$ npm install
-		$ npm test
-		$ npm run test
-		```
++	```bash
+	$ npm install
+	$ npm test
+	$ npm run test
+	```
 
 ## Contributors
 
