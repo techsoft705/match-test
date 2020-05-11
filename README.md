@@ -30,59 +30,59 @@
 	* [Changelog](#changelog)
 	* [Lincense](#license)
 
-	## Get Started
+## Get Started
 
-	 ### Language Translate
-	+ [Indonesian]()
-	+ [English]()
+### Language Translate
+ + [Indonesian]()
++ [English]()
 
-	### Features
-	+	[x] Parallel Module Loader (Support All Framework NodeJs)
-	+	[x] Parallel Route Middleware (Support Koa and Express)
-	+	[x] Parallel Plugin Middleware (Support Koa and Express)
-	+	[x] Flash Message
-	+ [x] Global Access Module
+### Features
++	[x] Parallel Module Loader (Support All Framework NodeJs)
++	[x] Parallel Route Middleware (Support Koa and Express)
++	[x] Parallel Plugin Middleware (Support Koa and Express)
++	[x] Flash Message
++   [x] Global Access Module
 
-	### Installation
-	```sh
-	$ npm i natural --save
-	```
-	 ### Example Usage
-	```javascript
-	// register all module
-	const natural = require("natural-utility");
-	natural.globalModule(
-	["express", "http", "path",  "bodyParser", "logger", "cookieParser"],
-	["express", "http", "path",  "body-parser", "morgan", "cookie-parser"]);
+### Installation
+```sh
+$ npm i natural --save
+```
+### Example Usage
+```javascript
+// register all module
+const natural = require("natural-utility");
+natural.globalModule(
+["express", "http", "path",  "bodyParser", "logger", "cookieParser"],
+["express", "http", "path",  "body-parser", "morgan", "cookie-parser"]);
 
-	// init all module
-	const app = express();
-	const server = http.createServer(app);
+// init all module
+const app = express();
+const server = http.createServer(app);
 
-	// init all route
-	const indexRoute = require("./routes/index.route");
+// init all route
+const indexRoute = require("./routes/index.route");
 
-	// register all plugin middleware
-	natural.pluginMiddleware(app, [
-	bodyParser.urlencoded({ extended: false }),
-	  bodyParser.json(),
-	  cookieParser(),
-	  logger("dev"),
-	  natural.flashMessage()
-	]);
+// register all plugin middleware
+natural.pluginMiddleware(app, [
+bodyParser.urlencoded({ extended: false }),
+  bodyParser.json(),
+  cookieParser(),
+  logger("dev"),
+  natural.flashMessage()
+]);
 
-	// register template engine
-	app.set("views", path.join(__dirname, "/views"));
-	app.set("view engine", "ejs");
+// register template engine
+app.set("views", path.join(__dirname, "/views"));
+app.set("view engine", "ejs");
 
-	// register all route midlleware
-	natural.routeMiddleware(app, [indexRoute]);
+// register all route midlleware
+natural.routeMiddleware(app, [indexRoute]);
 
-	// listening server
-	server.listen(3000, () => console.log("server is running"));
-	```
+// listening server
+server.listen(3000, () => console.log("server is running"));
+```
 
- ### API Reference
+### API Reference
 
 #### naturalModule
 
@@ -398,7 +398,7 @@
 		  </html>
 			```
 
- ## Working With Database
+## Working With Database
 
 #### MongoDB
 
@@ -510,7 +510,7 @@
 	  });
 		```
 
-	## How To Test
+## How To Test
 
 	**natural-utility** uses `supertest` to mock http requests, thus testing no longer relies on the http server.
 
@@ -520,15 +520,15 @@
 		$ npm run test
 		```
 
-	## Contributors
+## Contributors
 
   +	 [Vikri Kurniawan](https://github.com/vicrfiport) - English Translator
   +	 [Restu Wahyu Saputra](https://github.com/restuwahyu13) - Indonesian Translator
 
-	## Changelog
+## Changelog
 
 +	[Changelog History](https://github.com/restuwahyu13/natural/blob/master/CHANGELOG.md)
 
-	## License
+## License
 
-	+	[MIT](https://github.com/restuwahyu13/natural/blob/master/LICENSE.md)
++	[MIT](https://github.com/restuwahyu13/natural/blob/master/LICENSE.md)

@@ -1,6 +1,6 @@
 {
   "name": "math-utility",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "fungsi perhitungan matematika",
   "main": "lib/index.js",
   "directories": {
