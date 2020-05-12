@@ -194,7 +194,7 @@ server.listen(3000, () => console.log("server is running"));
 
 		  // listening server
 		  server.listen(3000, () => console.log("server is running"));
-			 ```
+			```
 
 	-  **After - example usage using natural-utility**
 
@@ -251,9 +251,9 @@ server.listen(3000, () => console.log("server is running"));
 		   // register all plugin middleware
 		   app.use(flash());
 		   app.use(session({
-			 secret: "kucing",
-			 resave: false,
-			 saveUninitialized: false
+			  secret: "kucing",
+			  resave: false,
+			  saveUninitialized: false
 		   }));
 		   app.use((req, res, next) => {
 			 res.locals.messages = require("express-message")(req, res);
@@ -265,7 +265,7 @@ server.listen(3000, () => console.log("server is running"));
 
 		   // listening server
 		   server.listen(3000, () => console.log("server is running"));
-			  ```
+			```
 
 		+ ```javascript
 		  // routes/home.js
@@ -422,7 +422,7 @@ server.listen(3000, () => console.log("server is running"));
 	     db.close();  
 	    });  
 	  });
-		 ```
+		```
 
 #### MySQL
 
