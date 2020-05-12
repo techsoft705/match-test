@@ -1,6 +1,6 @@
 {
   "name": "math-utility",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "fungsi perhitungan matematika",
   "main": "lib/index.js",
   "directories": {
@@ -10,8 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines" : {
-    "node" : ">= 11.0.0",
-    "npm" : ">= 6.4.1"
+    "node" : ">=11.0.0",
+    "npm" : "~6.4.1"
   },
   "author": "techsoft",
   "license": "ISC"
